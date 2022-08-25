@@ -21,7 +21,6 @@ namespace NumberGuesser
                 Console.WriteLine("My guess is " + guess);
                 Console.WriteLine("Was I correct? (h if your number is higher, l if its lower, and c if it is correct)");
                 var correct = Console.ReadKey();
-                Console.WriteLine(correct.Key.ToString());
 
                 if (correct.Key.ToString() == "H") {
                     bottom = guess;
