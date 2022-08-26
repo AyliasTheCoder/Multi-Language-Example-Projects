@@ -1,5 +1,5 @@
-def is_prime(number):
-    check = [2, 3, 5, 7, 11]
+def is_prime(number: int) -> bool:
+    check: list = [2, 3, 5, 7, 11]
 
     for x in check:
         if number % x == 0:
