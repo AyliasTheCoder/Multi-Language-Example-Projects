@@ -3,7 +3,7 @@
 #include <string>
 
 int main() {
-    printf("Think of a number between 1 and 1000\n");
+    std::cout << "Think of a number between 1 and 1000\n";
 
     int top = 1000;
     int bottom = 0;
@@ -13,8 +13,8 @@ int main() {
         int guess = round((top + bottom) / 2);
         count++;
 
-        printf("My guess is %d\n", guess);
-        printf("Was I correct? (h if your number is higher, l if its lower, and c if it is correct)\n");
+        std::cout << "My guess is " << guess << "\n";
+        std::cout << "Was I correct? (h if your number is higher, l if its lower, and c if it is correct)\n";
         std::string str;
         std::getline(std::cin, str);
         
