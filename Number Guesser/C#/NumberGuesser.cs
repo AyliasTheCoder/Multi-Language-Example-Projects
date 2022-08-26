@@ -20,13 +20,13 @@ namespace NumberGuesser
 
                 Console.WriteLine("My guess is " + guess);
                 Console.WriteLine("Was I correct? (h if your number is higher, l if its lower, and c if it is correct)");
-                var correct = Console.ReadKey();
+                var correct = Console.ReadLine();
 
-                if (correct.Key.ToString() == "H") {
+                if (correct == "h") {
                     bottom = guess;
-                } else if (correct.Key.ToString() == "L") {
+                } else if (correct == "l") {
                     top = guess;
-                } else if (correct.Key.ToString() == "C") {
+                } else if (correct == "c") {
                     Console.WriteLine("I guessed your number in " + count + " guesses!");
                     break;
                 } else {
